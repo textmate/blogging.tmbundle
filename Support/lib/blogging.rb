@@ -251,6 +251,7 @@ TEXT
     end
     @post['title'] = @headers['title'] if @headers['title']
     @post['wp_slug'] = @headers['slug'] if @headers['slug']
+    @post['wp_post_format'] = @headers['postformat'] if @headers['postformat']
     self.post_id = @headers['post'] if @headers['post']
 
     format = @headers['format']
@@ -422,6 +423,7 @@ TEXT
     doc << "Post: #{self.post_id}\n"
     doc << "Title: #{self.post['title']}\n"
     doc << "Slug: #{self.post['wp_slug']}\n" unless self.post['wp_slug'].to_s.empty?
+    doc << "Postformat: #{self.post['wp_post_format']}\n" unless self.post['wp_post_format'].to_s.empty?
     doc << "Keywords: #{self.post['mt_keywords']}\n" unless self.post['mt_keywords'].to_s.empty?
     doc << "Tags: #{self.post['mt_tags']}\n" if self.post['mt_tags'] && (self.post['mt_tags'] != '')
     doc << "Status: #{self.post['post_status']}\n" if self.post['post_status']
