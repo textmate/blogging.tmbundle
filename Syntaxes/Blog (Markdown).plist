@@ -11,18 +11,6 @@
 	</array>
 	<key>firstLineMatch</key>
 	<string>^Type: Blog Post \(Markdown\)</string>
-	<key>foldingStartMarker</key>
-	<string>(?x)
-		(&lt;(?i:head|body|table|thead|tbody|tfoot|tr|div|select|fieldset|style|script|ul|ol|form|dl)\b.*?&gt;
-		|&lt;!--(?!.*--&gt;)
-		|\{\s*($|\?&gt;\s*$|//|/\*(.*\*/\s*$|(?!.*?\*/)))
-		)</string>
-	<key>foldingStopMarker</key>
-	<string>(?x)
-		(&lt;/(?i:head|body|table|thead|tbody|tfoot|tr|div|select|fieldset|style|script|ul|ol|form|dl)&gt;
-		|^\s*--&gt;
-		|(^|\s)\}
-		)</string>
 	<key>keyEquivalent</key>
 	<string>^~B</string>
 	<key>name</key>
