@@ -576,7 +576,7 @@ TEXT
     result = nil
     TextMate.call_with_progress(:title => "Fetch Post", :message => "Contacting Server “#{@host}”…") do
       begin
-        result = self.client.getRecentPosts(self.blog_id, self.username, current_password, 20)
+        result = self.client.getRecentPosts(self.blog_id, self.username, current_password, ENV['TM_BLOG_POST_COUNT'] || 100)
       rescue XMLRPC::FaultException => e
         TextMate.exit_show_tool_tip("Error: #{e.faultString} (#{e.faultCode})")
       end
