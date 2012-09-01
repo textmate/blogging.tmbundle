@@ -75,6 +75,7 @@ The following settings are available, but optional. They can either be specified
 * `TM_BLOG_FORMAT`: Your preferred formatting choice (default will derive from current blog template selected).
 * `TM_BLOG_MODE`: 'mt' and 'wp' are valid settings for this. Influences the posting API to be as compatible as possible with Movable Type, TypePad, Blogger, Typo and WordPress variants of the metaWeblog API (default will derive from endpoint URL, or will default to 'mt').
 * `TM_HTTP_PROXY`: If you are behind a proxy set it to `host:port` of the proxy.
+* `TM_BLOG_POST_COUNT`: Controls the number of posts retrieved by the "Fetch Post" command. The default is 100.
 
 
 Troubleshooting
