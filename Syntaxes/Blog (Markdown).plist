@@ -4,10 +4,10 @@
 <dict>
 	<key>fileTypes</key>
 	<array>
+		<string>blog.md</string>
 		<string>blog.markdown</string>
 		<string>blog.mdown</string>
 		<string>blog.mkdn</string>
-		<string>blog.md</string>
 	</array>
 	<key>firstLineMatch</key>
 	<string>^Type: Blog Post \(Markdown\)</string>
