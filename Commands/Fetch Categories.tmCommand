@@ -7,7 +7,7 @@
 	<key>bundleUUID</key>
 	<string>79741B2E-271D-4CBC-A61A-380C83D36863</string>
 	<key>command</key>
-	<string>#!/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby -rjcode -Ku
+	<string>#!/usr/bin/env ruby18 -rjcode -Ku
 require "#{ENV['TM_SUPPORT_PATH']}/lib/progress"
 require "#{ENV['TM_SUPPORT_PATH']}/lib/exit_codes"
 require "#{ENV['TM_SUPPORT_PATH']}/lib/escape"
