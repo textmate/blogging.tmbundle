@@ -488,7 +488,7 @@ TEXT
       current_password = self.password
       self.post = client.getPost(self.post_id, self.username, current_password)
       if self.publish && link = self.post['permaLink']
-        require "#{ENV['TM_SUPPORT_PATH']}/lib/browser"
+        require "#{ENV['TM_BUNDLE_SUPPORT']}/lib/browser"
         Browser.load_url(link)
       end
       @mw_success = true
