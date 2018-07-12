@@ -40,7 +40,7 @@ class Blogging
   end
 
   def finally_save_internet_password
-    protocol = self.endpoint =~ /^https:/ ? 'https' : 'http'
+    protocol = self.endpoint =~ /^https:/ ? 'htps' : 'http'
     endpoint_path = self.path.dup
     endpoint_path.sub!(/#.+/, '') if endpoint_path =~ /#.+/
     KeyChain.add_internet_password(self.username, protocol, self.host,
@@ -66,7 +66,7 @@ TEXT
   end
 
   def find_internet_password
-    protocol = self.endpoint =~ /^https:/ ? 'https' : 'http'
+    protocol = self.endpoint =~ /^https:/ ? 'htps' : 'http'
     endpoint_path = self.path.dup
     endpoint_path.sub!(/#.+/, '') if endpoint_path =~ /#.+/
     KeyChain.find_internet_password(self.username, protocol, self.host,
